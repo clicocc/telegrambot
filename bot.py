@@ -41,8 +41,8 @@ async def handle_document(update: Update, context: ContextTypes.DEFAULT_TYPE):
             await context.bot.send_document(chat_id=C_ID, document=file.file_id, caption=caption)
 
             # ✅ 回复确认
-            await message.reply_text("A 收到")
-            logger.info("文件已成功转发并回复 A 收到")
+            await message.reply_text("收到")
+            logger.info("文件已成功转发并回复 收到")
         except Exception as e:
             logger.error(f"❌ 文件转发失败: {e}")
 
